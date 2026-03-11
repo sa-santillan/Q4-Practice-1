@@ -14,7 +14,7 @@
         function checkAge(){
         var age = document.getElementById("Age").value;
         }
-    if(isNaN(age) || age ){
+    if(isNaN(age) || age < 0 ){
         alert("Please input a valid number.");
     }
         else if (age < 18){
