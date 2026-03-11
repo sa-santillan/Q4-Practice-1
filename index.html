@@ -7,14 +7,16 @@
 </head>
 <body>
     <h1>Javascript Conditional Statements</h1>
+    <input type="text" id="Age" class="form-control" placeholder="type here...">
     <button class="btn btn-info" onclick="checkAge()"></button>
     <script>
         //checkAge
         function checkAge(){
-        if (15 < 18){
+        var age = document.getElementById("Age").value;
+        if (age < 18){
             alert("You are underage.");
         }
-        else if (21 > 18);{
+        else if (age > 18);{
         alert("You are of legal age.");
         }
         else {
